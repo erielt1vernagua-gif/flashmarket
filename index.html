@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flash Market</title>
+    <title>Flash Market - Juegos PS5</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -19,52 +19,58 @@
             letter-spacing: 2px;
         }
 
-        .container {
+        .productos {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-            padding: 80px 20px;
+            padding: 40px 20px;
         }
 
-        .card {
+        .producto {
             background: #1c1c1c;
-            width: 350px;
+            width: 280px;
+            margin: 20px;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 15px 40px rgba(0,0,0,0.6);
             transition: 0.3s;
+            text-align: center;
         }
 
-        .card:hover {
-            transform: translateY(-10px);
+        .producto:hover {
+            transform: translateY(-8px);
         }
 
-        .card img {
+        .producto img {
             width: 100%;
-            height: 400px;
+            height: 300px;
             object-fit: cover;
         }
 
         .info {
-            padding: 25px;
-            text-align: center;
+            padding: 20px;
+        }
+
+        .info h3 {
+            margin: 10px 0;
+            font-weight: bold;
         }
 
         .precio {
-            font-size: 22px;
+            font-size: 20px;
+            margin: 10px 0;
             color: #00ffcc;
-            margin: 15px 0;
             font-weight: bold;
         }
 
         .btn {
             background: #00ffcc;
             color: black;
-            padding: 12px 25px;
-            border-radius: 30px;
+            padding: 10px 20px;
+            border-radius: 25px;
             text-decoration: none;
-            font-weight: bold;
             display: inline-block;
+            margin-bottom: 15px;
         }
 
         .btn:hover {
@@ -83,17 +89,58 @@
 
 <header>FLASH MARKET ⚡</header>
 
-<div class="container">
-    <div class="card">
-        <img src="fc24.jpg" alt="FC24 PS5">
+<div class="productos">
+
+    <!-- FC24 -->
+    <div class="producto">
+        <img src="fc24.jpg" alt="EA Sports FC24 PS5">
         <div class="info">
-            <h2>EA Sports FC 24 - PS5</h2>
-            <div class="precio">$25.00</div>
-            <a class="btn" href="producto.html">
-                Ver Producto
-            </a>
+            <h3>EA Sports FC 24</h3>
+            <div class="precio">$45.00</div>
+            <a class="btn" href="producto.html">Ver Producto</a>
         </div>
     </div>
+
+    <!-- Street Fighter V -->
+    <div class="producto">
+        <img src="streetfighter.jpg" alt="Street Fighter V">
+        <div class="info">
+            <h3>Street Fighter V</h3>
+            <div class="precio">$30.00</div>
+            <a class="btn" href="https://wa.me/50769887359">Comprar</a>
+        </div>
+    </div>
+
+    <!-- Need for Speed Payback -->
+    <div class="producto">
+        <img src="nfs.jpg" alt="Need for Speed Payback">
+        <div class="info">
+            <h3>Need for Speed Payback</h3>
+            <div class="precio">$28.00</div>
+            <a class="btn" href="https://wa.me/50769887359">Comprar</a>
+        </div>
+    </div>
+
+    <!-- Call of Duty Advanced Warfare -->
+    <div class="producto">
+        <img src="cod.jpg" alt="Call of Duty Advanced Warfare">
+        <div class="info">
+            <h3>Call of Duty Advanced Warfare</h3>
+            <div class="precio">$32.00</div>
+            <a class="btn" href="https://wa.me/50769887359">Comprar</a>
+        </div>
+    </div>
+
+    <!-- Dragon Ball Xenoverse 2 -->
+    <div class="producto">
+        <img src="dragonball.jpg" alt="Dragon Ball Xenoverse 2">
+        <div class="info">
+            <h3>Dragon Ball Xenoverse 2</h3>
+            <div class="precio">$35.00</div>
+            <a class="btn" href="https://wa.me/50769887359">Comprar</a>
+        </div>
+    </div>
+
 </div>
 
 <footer>
@@ -104,6 +151,8 @@
 
 </body>
 </html>
+
+
 
 
 
