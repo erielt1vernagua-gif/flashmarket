@@ -1,177 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flash market</title>
+    <title>Flash Market</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
+            background: #0f0f0f;
+            color: white;
         }
 
         header {
-            background-color: #111;
-            color: blue;
-            padding: 25px;
+            background: black;
+            padding: 20px;
             text-align: center;
+            font-size: 28px;
             letter-spacing: 2px;
         }
 
-        header h1 {
-            margin: 0;
-            font-weight: 300;
-        }
-
-        nav {
-            background-color: white;
-            text-align: center;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        nav a {
-            margin: 0 20px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: #000;
-        }
-
-        .banner {
-            background: linear-gradient(to right, #111, #333);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .banner h2 {
-            font-weight: 300;
-            font-size: 32px;
-        }
-
-        .productos {
+        .container {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            padding: 40px 20px;
+            align-items: center;
+            padding: 80px 20px;
         }
 
-        .producto {
-            background: white;
-            width: 280px;
-            margin: 20px;
-            border-radius: 15px;
+        .card {
+            background: #1c1c1c;
+            width: 350px;
+            border-radius: 20px;
             overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
             transition: 0.3s;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
 
-        .producto:hover {
-            transform: translateY(-8px);
+        .card:hover {
+            transform: translateY(-10px);
         }
 
-        .producto img {
+        .card img {
             width: 100%;
-            height: 250px;
+            height: 400px;
             object-fit: cover;
         }
 
         .info {
-            padding: 20px;
+            padding: 25px;
             text-align: center;
-        }
-
-        .info h3 {
-            margin: 10px 0;
-            font-weight: 500;
         }
 
         .precio {
-            font-size: 18px;
-            margin: 10px 0;
+            font-size: 22px;
+            color: #00ffcc;
+            margin: 15px 0;
             font-weight: bold;
         }
 
-        button {
-            background-color: #111;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: 0.3s;
+        .btn {
+            background: #00ffcc;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
         }
 
-        button:hover {
-            background-color: #444;
+        .btn:hover {
+            background: white;
         }
 
         footer {
-            background-color: #111;
-            color: white;
             text-align: center;
-            padding: 25px;
-            margin-top: 40px;
+            padding: 30px;
+            color: #aaa;
             font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Flash market</h1>
-</header>
+<header>FLASH MARKET ⚡</header>
 
-<nav>
-    <a href="#">Inicio</a>
-    <a href="#">Productos</a>
-    <a href="#">Contacto</a>
-</nav>
-
-<section class="banner">
-    <h2>Productos exclusivos al mejor precio</h2>
-    <p>Calidad • Estilo • Tecnología</p>
-</section>
-
-<section class="productos">
-
-    <div class="producto">
-        <img src="https://via.placeholder.com/300x250" alt="Audífonos">
+<div class="container">
+    <div class="card">
+        <img src="fc24.jpg" alt="FC24 PS5">
         <div class="info">
-            <h3>Audífonos Premium</h3>
-            <p class="precio">$18.00</p>
-            <button>Comprar</button>
+            <h2>EA Sports FC 24 - PS5</h2>
+            <div class="precio">$45.00</div>
+            <a class="btn" href="producto.html">
+                Ver Producto
+            </a>
         </div>
     </div>
-
-    <div class="producto">
-        <img src="https://via.placeholder.com/300x250" alt="Reloj">
-        <div class="info">
-            <h3>Smartwatch Elegante</h3>
-            <p class="precio">$29.00</p>
-            <button>Comprar</button>
-        </div>
-    </div>
-
-    <div class="producto">
-        <img src="https://via.placeholder.com/300x250" alt="Luz LED">
-        <div class="info">
-            <h3>Luz LED Moderna</h3>
-            <p class="precio">$12.00</p>
-            <button>Comprar</button>
-        </div>
-    </div>
-
-</section>
+</div>
 
 <footer>
-    <p>WhatsApp: +507 6988-7359</p>
-    <p>Instagram: @flash_market.pty</p>
-    <p>© 2026 Flash market Panamá</p>
+    WhatsApp: +507 6988-7359<br>
+    Instagram: @flash_market.pty<br>
+    © 2026 Flash Market Panamá
 </footer>
 
 </body>
